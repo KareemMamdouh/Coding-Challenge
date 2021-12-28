@@ -1,0 +1,18 @@
+.App {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.App .card {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.App .card .avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.App .card p {
+  margin: 0;
+}

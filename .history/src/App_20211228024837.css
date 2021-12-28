@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+.App .card {
+  width: 50%;
+  display: flex;
+}
+.App .card .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}

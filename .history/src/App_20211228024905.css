@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.App .card {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.App .card .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}

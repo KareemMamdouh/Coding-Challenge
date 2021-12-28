@@ -1,0 +1,33 @@
+*,
+body {
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.App .card {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #888;
+}
+
+.App .card .avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.App .card .content {
+  padding: 0 10px;
+  object-fit: contain;
+}
+.App .card p {
+  margin: 0;
+}
+.p-2 {
+  padding: 10px;
+}
