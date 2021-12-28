@@ -1,5 +1,4 @@
 import React ,{useEffect,useState}from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ReactPaginate from 'react-paginate';
 interface IState {
@@ -30,6 +29,7 @@ function App() {
       <p>loading...</p>
       :
       <>
+      {/* repositories cards */}
       {state&&state.items&&state.items.map((x,i)=>{
         return(
           <div className='card'  key={x.id}>
@@ -84,18 +84,6 @@ function App() {
             previousClassName="mx-1 mx-4 "
             
           />}
-            {/* {state?.total_count?[...new Array(34)].map((x,i)=>{
-              return(
-                <div>{i+1}</div>
-              )
-            })
-            :
-            [...new Array(1000/30)].map((x,i)=>{
-              return(
-                <div>{i-1}</div>
-              )
-            })
-            } */}
         </div>
       </>}
     </div>
