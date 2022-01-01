@@ -1,4 +1,4 @@
-import React ,{useEffect,useState}from 'react';
+import {useState}from 'react';
 import gitIcon from 'assets/images/gitIcon.png'
 import searchIcon from 'assets/images/searchIcon.png'
 import {GitImg,SearchImg,SearchInput,InputSec ,ButtonSearchImg} from './Home.style'

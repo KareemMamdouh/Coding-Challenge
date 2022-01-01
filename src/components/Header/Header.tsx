@@ -1,4 +1,3 @@
-import React ,{useEffect,useState}from 'react';
 import {HeaderSec,Container} from './Header.style'
 
 function Header() {

@@ -13,20 +13,13 @@ interface IFilters {
   order:string
 }
 function Search() {
-  // const name = searchParams.get("name");
   const [state,setState]=useState<IState|null>(null)
   const [filters,setFilters]=useState<IFilters>({sort:"",order:"desc"})
   const [loading,setLoading]=useState<boolean>(false)
-  // const [pageNumber,setPageNumber]=useState(1)
-  // const today = new Date()
-  // const priorDate = new Date().setDate(today.getDate()-30)
-  // const last30Days= new Date(priorDate).toISOString().slice(0, 10);
   const params = new URLSearchParams(window.location.search);
   const name = params.get("name"); 
   useEffect(() => {
     setLoading(true)
-    // console.log(name,"name")
-    // &page=${pageNumber}
     fetch(`https://api.github.com/search/repositories?q=${name}${filters.sort.length>0?`&sort=${filters.sort}`:``}&order=${filters.order}`)
     .then(response => response.json())
     .then(data => {
